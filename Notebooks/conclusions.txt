@@ -1,0 +1,4 @@
+from the notebooks, i have decided to use the lightgbm model for the predictions, since its not only the lightest 
+choice between lgbm and xgboost, but it also has a bigger accuracy. also, i am going to use a vectorization technique
+with an ngram range from 1 to 2, which means bigrams and unigrams, and a tfidf type of vectorizer with max features up to 1000.
+
