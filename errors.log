@@ -1,0 +1,1 @@
+2025-11-06 18:58:42,070 - data_ingestion - ERROR - Unexpected error ingesting data: load_data() got an unexpected keyword argument 'data_url'
