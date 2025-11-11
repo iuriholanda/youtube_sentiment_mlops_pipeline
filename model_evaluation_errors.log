@@ -1,0 +1,2 @@
+2025-11-10 22:33:59,250 - model_evaluation - ERROR - File not found. Path: C:\Users\iuri_\OneDrive\Desktop\youtube_sentiment_mlops_pipeline\data/interim/test_processed.csv
+2025-11-10 22:33:59,250 - model_evaluation - ERROR - Unexpected error completing model evaluation: [Errno 2] No such file or directory: 'C:\\Users\\iuri_\\OneDrive\\Desktop\\youtube_sentiment_mlops_pipeline\\data/interim/test_processed.csv'

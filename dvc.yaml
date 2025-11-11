@@ -17,3 +17,34 @@ stages:
     - src/data/data_preprocessing_component.py    
     outs:
     - data/interim
+
+  model_building:
+    cmd: python src/model/model_building_component.py 
+    deps: 
+    - src/model/model_building_component.py 
+    - data/interim/train.csv
+    params: 
+    - model_building.ngram_range
+    - model_building.max_features
+    - model_building.max_depth
+    - model_building.n_estimators
+    - model_building.learning_rate
+    outs:
+    - model.pkl
+    - tfidf_vectorizer.pkl
+
+  model_evaluating:
+    cmd: python src/model/model_evaluating_component.py 
+    deps: 
+    - src/model/model_evaluating_component.py 
+    - data/interim/test.csv
+    - model.pkl
+    - tfidf_vectorizer.pkl
+    outs:
+    - experiment_info.json
+
+  model_registering:
+    cmd: python src/model/model_registering_component.py 
+    deps:
+    - experiment_info.json
+    - src/model/model_registering_component.py

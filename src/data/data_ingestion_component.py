@@ -111,7 +111,8 @@ def main():
     
     except Exception as e:
         logger.error('Unexpected error ingesting data: %s', e)
-        raise
+        print(f"Error: {e}")
+
 
 
 if __name__ == '__main__':
