@@ -3,6 +3,4 @@ myvenv/
 
 .env
 data/*
-/model.pkl
-/experiment_info.json
 # plugin_frontend/config.js  
