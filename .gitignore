@@ -6,4 +6,4 @@ data/*
 /model.pkl
 /tfidf_vectorizer.pkl
 /experiment_info.json
-plugin_frontend/config.js  
+# plugin_frontend/config.js  
