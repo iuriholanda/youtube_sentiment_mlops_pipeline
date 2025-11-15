@@ -15,6 +15,7 @@ dependencies:
   - mlflow
   - python-dotenv
   - requests
+  - nltk
   
   - pip:
     - dvc[s3]
