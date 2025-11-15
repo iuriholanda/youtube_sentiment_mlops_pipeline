@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import os
-import nltk
 import logging
 import yaml
 import lightgbm as lgb
