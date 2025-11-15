@@ -1,0 +1,22 @@
+# Git and DVC
+.git
+.dvc
+.dvcignore
+
+# Data
+data/
+
+# Notebooks and reports
+Notebooks/
+reports/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files (NEVER copy these)
+.env
+
+# VS Code and other junk
+.vscode/
+README.md

@@ -1,0 +1,22 @@
+name: youtube
+
+channels:
+  - conda-forge 
+
+dependencies:
+  - python=3.10    
+  - pip
+  - flask
+  - gunicorn       
+  - pandas
+  - scikit-learn
+  - lightgbm
+  - optuna
+  - mlflow
+  - python-dotenv
+  - requests
+  
+  - pip:
+    - dvc[s3]
+    - wordcloud
+    - matplotlib

@@ -134,7 +134,7 @@ def save_model_info(run_id, model_path, file_path):
 
 
 def main():
-    mlflow.set_tracking_uri("http://ec2-18-222-172-50.us-east-2.compute.amazonaws.com:5000")
+    mlflow.set_tracking_uri("http://ec2-18-222-172-50.us-east-2.compute.amazonaws.com:5000/")
     mlflow.set_experiment('dvc-pipeline-testing')
 
     with mlflow.start_run() as run:
@@ -163,7 +163,7 @@ def main():
                 input_example=input_example 
             )
 
-            model_path = "model"
+            model_path = "lgbm_model"
             save_model_info(run.info.run_id, model_path, 'experiment_info.json')
             mlflow.log_artifact(os.path.join(root_dir, 'tfidf_vectorizer.pkl'))
 
