@@ -6,6 +6,11 @@ COPY environment.yml .
 
 RUN conda env create -f environment.yml
 
+RUN apt-get update && apt-get install -y \
+    fontconfig \
+    && rm -rf /var/lib/apt/lists/*
+RUN fc-cache -f -v
+
 COPY . .
 
 EXPOSE 5000
