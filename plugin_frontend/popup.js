@@ -1,7 +1,5 @@
 
-// import { API_URL } from './config.js';
 document.addEventListener("DOMContentLoaded", async () => {
-  //const API_URL = "http://localhost:5000";
   const outputDiv = document.getElementById("output");
 
   // Get the current tab's URL
