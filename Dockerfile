@@ -14,10 +14,6 @@ FROM python:3.10-slim-buster
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \
-    fontconfig \
-    && rm -rf /var/lib/apt/lists/*
-RUN fc-cache -f -v
 
 COPY --from=builder /opt/conda/envs/youtube /opt/conda/envs/youtube
 
